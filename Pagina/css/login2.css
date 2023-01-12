@@ -5,3 +5,8 @@ body {
 .login-bg {
     background-color: #C6B38E;
 }
+
+.btn-color {
+    color: #ffff;
+    background-color: #3D0814;
+}
