@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login2.css">
+    
+    <title>Super Login</title>
+
+    <!-- Declaracion de la imagen -->
+    <style>
+        .bg{
+            background-image: url(https://dam.smashmexico.com.mx/wp-content/uploads/2019/04/takagisan2-001.jpg);
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-light mt-4 rounded-3 shadow">
+        <div class="row align-items-stretch">
+            <!-- Imagen de presentacion -->
+            <!-- Solo se muestra si la pantalla esta en large -->
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start"></div>
+            <!-- Peticiones del login -->
+            <div class="col login-bg p-3 rounded-end">
+                <div class="text-end py-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Logo_Renovaci%C3%B3n_Universitaria_UACH.svg/480px-Logo_Renovaci%C3%B3n_Universitaria_UACH.svg.png" width="100" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-2">Welcome</h2>
+
+                <!-- Login -->
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="from-label">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="from-label">Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="mb-4 form-check" >
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Remember me</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>Without account? <a href="#">Create account</a></span> <br>
+                        <span><a href="#">Forgot password?</a></span>
+                    </div>
+                </form>
+                <!-- login con redes -->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            Login with:
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-2">
+                                        <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" width="32" height="32" alt="">
+                                    </div>
+                                    <div class="col-10 d-none d-md-block text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-2">
+                                        <img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png" height="32" alt="">
+                                    </div>
+                                    <div class="col-10 d-none d-md-block text-center">
+                                        Twitter
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
